@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
+import FramePlus
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, GitHub dev")
+            Color.indigo
+//                .frame(width: 200, height: 200)
+                .frame(square: 200)
         }
         .padding()
     }

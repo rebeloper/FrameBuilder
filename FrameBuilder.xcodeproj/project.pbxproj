@@ -11,7 +11,7 @@
 		C9B56082292783B9001790C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B56081292783B9001790C7 /* ContentView.swift */; };
 		C9B56084292783BA001790C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B56083292783BA001790C7 /* Assets.xcassets */; };
 		C9B56087292783BA001790C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B56086292783BA001790C7 /* Preview Assets.xcassets */; };
-		C9B5608E292783EC001790C7 /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5608D292783EC001790C7 /* View+.swift */; };
+		C9B5609129278969001790C7 /* FramePlus in Frameworks */ = {isa = PBXBuildFile; productRef = C9B5609029278969001790C7 /* FramePlus */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,6 @@
 		C9B56081292783B9001790C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C9B56083292783BA001790C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9B56086292783BA001790C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C9B5608D292783EC001790C7 /* View+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B5609129278969001790C7 /* FramePlus in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +55,6 @@
 			children = (
 				C9B5607F292783B9001790C7 /* FrameBuilderApp.swift */,
 				C9B56081292783B9001790C7 /* ContentView.swift */,
-				C9B5608D292783EC001790C7 /* View+.swift */,
 				C9B56083292783BA001790C7 /* Assets.xcassets */,
 				C9B56085292783BA001790C7 /* Preview Content */,
 			);
@@ -86,6 +85,9 @@
 			dependencies = (
 			);
 			name = FrameBuilder;
+			packageProductDependencies = (
+				C9B5609029278969001790C7 /* FramePlus */,
+			);
 			productName = FrameBuilder;
 			productReference = C9B5607C292783B9001790C7 /* FrameBuilder.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C9B56073292783B9001790C7;
+			packageReferences = (
+				C9B5608F29278969001790C7 /* XCRemoteSwiftPackageReference "FramePlus" */,
+			);
 			productRefGroup = C9B5607D292783B9001790C7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,7 +146,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9B56082292783B9001790C7 /* ContentView.swift in Sources */,
-				C9B5608E292783EC001790C7 /* View+.swift in Sources */,
 				C9B56080292783B9001790C7 /* FrameBuilderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9B5608F29278969001790C7 /* XCRemoteSwiftPackageReference "FramePlus" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rebeloper/FramePlus.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9B5609029278969001790C7 /* FramePlus */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9B5608F29278969001790C7 /* XCRemoteSwiftPackageReference "FramePlus" */;
+			productName = FramePlus;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9B56074292783B9001790C7 /* Project object */;
 }
